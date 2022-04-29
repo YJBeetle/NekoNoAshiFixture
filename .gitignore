@@ -7,3 +7,5 @@ _autosave-*.kicad_pcb
 *.kicad_prl
 /output
 /*/output
+
+*.FCStd1
