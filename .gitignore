@@ -10,3 +10,4 @@ _autosave-*.kicad_pcb
 
 *.FCStd1
 *.step
+*.obj
