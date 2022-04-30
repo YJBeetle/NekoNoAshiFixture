@@ -9,3 +9,4 @@ _autosave-*.kicad_pcb
 /*/output
 
 *.FCStd1
+*.step
