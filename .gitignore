@@ -11,3 +11,7 @@ _autosave-*.kicad_pcb
 *.FCStd1
 *.step
 *.obj
+*.dae
+*.hdr
+*.blend
+*.blend1
