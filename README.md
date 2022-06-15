@@ -31,3 +31,5 @@ You can find PCB design files in the `TestNeedle` folder.
 Clip connector is a good way to persistent connection to the PCB, such as debug your chip, `Clip` folder contains a FreeCAD design file `Fixture.FCStd`, you can 3D print this file with PETG or other sturdy print material. And the supplementary PCB design is also provided in the `Clip` folder.
 
 ![Clip](https://user-images.githubusercontent.com/8038511/173806358-feefa180-b81d-44e4-99a9-08597d6d76a1.png)
+
+![Clip2](https://user-images.githubusercontent.com/8038511/173818526-0935264e-4586-4c19-85a8-690d3c33e9f0.png)
