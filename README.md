@@ -23,6 +23,10 @@ Test Needle connector is a handheld connector. This type of connector is good fo
 
 You can find PCB design files in the `TestNeedle` folder.
 
+![Needle](https://user-images.githubusercontent.com/8038511/173817801-1c8001b9-4a99-4336-ba42-3ec8435dd885.png)
+
+![Needle2](https://user-images.githubusercontent.com/8038511/173817502-b0202656-4881-4886-84db-a64d9fba86ee.png)
+
 ### Clip connector
 Clip connector is a good way to persistent connection to the PCB, such as debug your chip, `Clip` folder contains a FreeCAD design file `Fixture.FCStd`, you can 3D print this file with PETG or other sturdy print material. And the supplementary PCB design is also provided in the `Clip` folder.
 
