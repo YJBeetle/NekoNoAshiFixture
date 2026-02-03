@@ -1,0 +1,53 @@
+name: KiCad CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: kicad/kicad:9.0.7-full
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Create output directory
+      run: mkdir -p output
+
+    - name: Generate outputs for Clip
+      run: |
+        kicad-cli pcb export gerbers -o ./output/Clip/gerbers -l F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts --no-protel-ext Clip/Clip/Clip.kicad_pcb
+        kicad-cli pcb export drill -o ./output/Clip/drill --excellon-separate-th --excellon-oval-format=route Clip/Clip/Clip.kicad_pcb
+        kicad-cli pcb export step -o ./output/Clip/Clip.step --subst-models --drill-origin Clip/Clip/Clip.kicad_pcb
+        kicad-cli sch export pdf -o ./output/Clip/Clip.pdf Clip/Clip/Clip.kicad_sch
+
+    - name: Generate outputs for Clip2
+      run: |
+        kicad-cli pcb export gerbers -o ./output/Clip2/gerbers -l F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts --no-protel-ext Clip/Clip2/Clip2.kicad_pcb
+        kicad-cli pcb export drill -o ./output/Clip2/drill --excellon-separate-th --excellon-oval-format=route Clip/Clip2/Clip2.kicad_pcb
+        kicad-cli pcb export step -o ./output/Clip2/Clip2.step --subst-models --drill-origin Clip/Clip2/Clip2.kicad_pcb
+        kicad-cli sch export pdf -o ./output/Clip2/Clip2.pdf Clip/Clip2/Clip2.kicad_sch
+
+    - name: Generate outputs for TestNeedle
+      run: |
+        kicad-cli pcb export gerbers -o ./output/TestNeedle/gerbers -l F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts --no-protel-ext TestNeedle/TestNeedle/TestNeedle.kicad_pcb
+        kicad-cli pcb export drill -o ./output/TestNeedle/drill --excellon-separate-th --excellon-oval-format=route TestNeedle/TestNeedle/TestNeedle.kicad_pcb
+        kicad-cli pcb export step -o ./output/TestNeedle/TestNeedle.step --subst-models --drill-origin TestNeedle/TestNeedle/TestNeedle.kicad_pcb
+        kicad-cli sch export pdf -o ./output/TestNeedle/TestNeedle.pdf TestNeedle/TestNeedle/TestNeedle.kicad_sch
+
+    - name: Generate outputs for TestNeedle2
+      run: |
+        kicad-cli pcb export gerbers -o ./output/TestNeedle2/gerbers -l F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.Mask,B.Mask,Edge.Cuts --no-protel-ext TestNeedle/TestNeedle2/TestNeedle2.kicad_pcb
+        kicad-cli pcb export drill -o ./output/TestNeedle2/drill --excellon-separate-th --excellon-oval-format=route TestNeedle/TestNeedle2/TestNeedle2.kicad_pcb
+        kicad-cli pcb export step -o ./output/TestNeedle2/TestNeedle2.step --subst-models --drill-origin TestNeedle/TestNeedle2/TestNeedle2.kicad_pcb
+        kicad-cli sch export pdf -o ./output/TestNeedle2/TestNeedle2.pdf TestNeedle/TestNeedle2/TestNeedle2.kicad_sch
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: kicad-outputs
+        path: output/
