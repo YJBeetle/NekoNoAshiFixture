@@ -9,7 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: kicad/kicad:9.0.7-full
+    container:
+      image: kicad/kicad:9.0.7-full
+      options: --user root
 
     steps:
     - name: Checkout code
