@@ -1,4 +1,7 @@
 # Neko Paw Shaped Test Point
+
+[中文说明](README.cn.md) | English
+
 This repository contains a "Neko Paw" Shaped Test Point design files, include KiCad Footprint and FreeCad test point clip design file.
 
 ![footprint](https://user-images.githubusercontent.com/8038511/173807471-f3634d36-5d1a-4202-bad3-2db55b7f6b24.png)
