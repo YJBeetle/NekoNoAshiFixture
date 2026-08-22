@@ -40,8 +40,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 1.0,
-          "height": 1.1,
-          "width": 2.0
+          "height": 1.7,
+          "width": 1.7
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -78,10 +78,6 @@
         }
       ],
       "drc_exclusions": [
-        [
-          "isolated_copper|173692539|109019685|bf417e23-0d03-4e39-a982-3764b7400971|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
         [
           "lib_footprint_issues|167000000|113254344|ab65de88-d6d4-4977-8af4-8aa6776f90d3|00000000-0000-0000-0000-000000000000",
           ""
