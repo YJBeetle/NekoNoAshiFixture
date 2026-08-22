@@ -18,3 +18,5 @@ _autosave-*.kicad_pcb
 *.hdr
 *.blend
 *.blend1
+
+Thumbs.db
