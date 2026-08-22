@@ -3,12 +3,12 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(property "Reference" "REF**"
+	(property "Reference" "J2"
 		(at 0 6 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "edb74651-f55f-4837-9d66-c86647219b71")
+		(uuid "1a8a5916-3d25-4584-a789-71ceb52a6f24")
 		(effects
 			(font
 				(size 1 1)
@@ -16,11 +16,12 @@
 			)
 		)
 	)
-	(property "Value" "moew_adapter"
+	(property "Value" "Conn_01x05_Male"
 		(at 0 2.75 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "1cca2d4e-2d17-414c-8fb1-5a8c82b33b2e")
+		(hide yes)
+		(uuid "812b8111-9e7a-4a01-af2a-83557e1285e4")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +33,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8c6c45f1-3b93-493d-a8ab-f65207b866f0")
+		(uuid "a959e1ad-6996-4d9f-8a9c-8620d1bb36f2")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,13 +44,14 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d4ed29de-6050-49fe-8caa-5b9f47080f4f")
+		(uuid "b8e9b8d2-cc98-4113-bbde-5d874a8774b8")
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 	)
+	(sheetfile "Clip.kicad_sch")
 	(attr through_hole)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_poly
@@ -85,8 +87,8 @@
 			(type solid)
 		)
 		(fill yes)
-		(layer "F.SilkS")
-		(uuid "5fba75db-3433-414a-ad2f-b5c6dcd21705")
+		(layer "B.SilkS")
+		(uuid "97710b42-f63c-4c18-a2f8-e8c0684f651a")
 	)
 	(fp_poly
 		(pts
@@ -116,8 +118,8 @@
 			(type solid)
 		)
 		(fill yes)
-		(layer "F.SilkS")
-		(uuid "4131adfa-0220-41f1-8e32-983dfdbcc3f8")
+		(layer "B.SilkS")
+		(uuid "3853b3f8-2120-437c-b2f4-50e4eb2e37b7")
 	)
 	(fp_poly
 		(pts
@@ -152,8 +154,8 @@
 			(type solid)
 		)
 		(fill yes)
-		(layer "F.SilkS")
-		(uuid "dc163278-06b2-4304-9367-cfd22cd34690")
+		(layer "B.SilkS")
+		(uuid "59eb1899-05b2-4578-8e16-0ad20150bf89")
 	)
 	(fp_poly
 		(pts
@@ -191,8 +193,8 @@
 			(type solid)
 		)
 		(fill yes)
-		(layer "F.SilkS")
-		(uuid "ef639829-3e31-49b8-bc7b-ad115a408721")
+		(layer "B.SilkS")
+		(uuid "73988728-b559-4a30-8672-b4dd4f40970c")
 	)
 	(fp_poly
 		(pts
@@ -239,22 +241,33 @@
 			(type solid)
 		)
 		(fill yes)
-		(layer "F.SilkS")
-		(uuid "0a8edb80-fcfb-4021-8d76-9344d6eea8c7")
+		(layer "B.SilkS")
+		(uuid "49958bcd-51fc-49d2-bb60-c5595f33a3d9")
 	)
 	(pad "1" thru_hole circle
 		(at 0 1)
 		(size 1.6 1.6)
 		(drill 1)
-		(layers "*.Cu" "*.Mask")
+		(layers "*.Cu" "F.Mask")
 		(remove_unused_layers no)
-		(uuid "209ff77a-d4ba-45e9-b1e4-681f6098b5be")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges yes)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "6756067f-5f54-4ec4-923b-68a7c98eb0a1")
 	)
 	(pad "2" thru_hole custom
 		(at -1.97 -0.3)
 		(size 1 1)
 		(drill 1)
-		(layers "*.Cu" "*.Mask")
+		(layers "*.Cu" "F.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 90)
 		(options
@@ -299,13 +312,24 @@
 				(fill yes)
 			)
 		)
-		(uuid "b2091e3b-bd6b-497c-a7fe-74d49cce7f9c")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges yes)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "cb8d1fd5-132a-458d-8752-79aacf1c4136")
 	)
 	(pad "3" thru_hole custom
 		(at -0.75 -1.45)
 		(size 1 1)
 		(drill 1)
-		(layers "*.Cu" "*.Mask")
+		(layers "*.Cu" "F.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 90)
 		(options
@@ -349,13 +373,24 @@
 				(fill yes)
 			)
 		)
-		(uuid "7c8ada65-6fee-4b16-98eb-1487282e0ce9")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges yes)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "ceb65063-c662-4efb-a4e2-583e4df2abfd")
 	)
 	(pad "4" thru_hole custom
 		(at 0.77 -1.45)
 		(size 1 1)
 		(drill 1)
-		(layers "*.Cu" "*.Mask")
+		(layers "*.Cu" "F.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 90)
 		(options
@@ -398,13 +433,24 @@
 				(fill yes)
 			)
 		)
-		(uuid "01e8c840-9dd4-4d52-8b06-953f62e1b431")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges yes)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "759e3399-e1bb-43c3-82e5-d563c227bf75")
 	)
 	(pad "5" thru_hole custom
 		(at 1.98 -0.33)
 		(size 1 1)
 		(drill 1)
-		(layers "*.Cu" "*.Mask")
+		(layers "*.Cu" "F.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 90)
 		(options
@@ -446,29 +492,42 @@
 				(fill yes)
 			)
 		)
-		(uuid "ed529df1-71e7-4f12-aaba-f936965edb14")
+		(teardrops
+			(best_length_ratio 0.5)
+			(max_length 1)
+			(best_width_ratio 1)
+			(max_width 2)
+			(curved_edges yes)
+			(filter_ratio 0.9)
+			(enabled yes)
+			(allow_two_segments yes)
+			(prefer_zone_connections yes)
+		)
+		(uuid "ecc50d2a-cf60-4081-a3ef-f42850df1abd")
 	)
 	(pad "NC" thru_hole circle
 		(at 0 -4)
-		(size 1.6 1.6)
+		(size 1.8 1.8)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "f57901ac-3671-4f1e-b1d2-9a4cb89abb66")
+		(solder_mask_margin -0.1)
+		(uuid "ccd136fb-2f44-4cb4-b5d5-c9c899d36ab1")
 	)
 	(pad "NC" thru_hole circle
 		(at 0 4)
-		(size 1.6 1.6)
+		(size 1.8 1.8)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "20402b5c-4362-4c3e-9065-a23688f30778")
+		(solder_mask_margin -0.1)
+		(uuid "76bf46cb-07b0-41aa-afd2-1f77199722af")
 	)
 	(group ""
-		(uuid "75786349-8d3e-4b52-94b6-53c4c64fd5ca")
-		(members "0a8edb80-fcfb-4021-8d76-9344d6eea8c7" "4131adfa-0220-41f1-8e32-983dfdbcc3f8"
-			"5fba75db-3433-414a-ad2f-b5c6dcd21705" "dc163278-06b2-4304-9367-cfd22cd34690"
-			"ef639829-3e31-49b8-bc7b-ad115a408721"
+		(uuid "e9f34bc4-35d1-4f2e-879f-3e4f7c5bba2b")
+		(members "3853b3f8-2120-437c-b2f4-50e4eb2e37b7" "49958bcd-51fc-49d2-bb60-c5595f33a3d9"
+			"59eb1899-05b2-4578-8e16-0ad20150bf89" "73988728-b559-4a30-8672-b4dd4f40970c"
+			"97710b42-f63c-4c18-a2f8-e8c0684f651a"
 		)
 	)
 	(embedded_fonts no)
