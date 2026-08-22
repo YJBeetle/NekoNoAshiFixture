@@ -17,7 +17,9 @@ All footprints contains dowel pin on Edge Cuts.
 ## Fixture
 This repository also contains fixtures for neko paw test point. Both of them need pogo pin to assemble.
 
-We high recommend to use 1.0mm needle bar diameter with 0.74mm tip diameter pogo pin with round tip, such as PAL75-J, if you use sharp tip, it may harm your PCB tin layer.
+We recommend using pogo pins with a 1.0mm needle bar diameter, and strongly advise using split-type pogo pins, such as the P50 series, as high temperatures can damage integrated pogo pins.
+
+We highly recommend using round-tip pogo pins, because sharp-tip pogo pins may damage the appearance of the Neko Paw pads.
 
 You also need two 1.0mm diameter * 16mm length dowel pin. 
 

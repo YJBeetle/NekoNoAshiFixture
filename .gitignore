@@ -11,14 +11,6 @@ _autosave-*.kicad_pcb
 /output
 /*/output
 
-*.FCStd1
-*.step
-*.obj
-*.dae
-*.hdr
-*.blend
-*.blend1
-
 Thumbs.db
 
 ~$*.SLDASM
